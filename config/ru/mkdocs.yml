@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: 'My Docs'
+docs_dir: '../../docs/ru'
+site_dir: '../../generated/ru'
+
+theme:
+  name: material
+  language: ru
+  features:
+    - tabs
+      - navigation.tabs
+      - content.code.annotate
+      - navigation.tabs.sticky
+      - navigation.instant
+      - navigation.tracking
+      - navigation.top
+      - search.suggest
+      - search.highlight
+
+extra:
+  alternate:
+    - name: Russian
+      link: /ru/
+      lang: ru
+    - name: English
+      link: /en/
+      lang: en
+
+nav:
+  - Home:
+      - index.md
+  - Second:
+      - second.md
